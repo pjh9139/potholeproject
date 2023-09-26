@@ -1,0 +1,55 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>안전모 AI.jsp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nave-item active ">
+              &nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nave-item active">
+              <a class="nav-link" href='http://localhost:8080/pothole/index.com'>홈</a>
+            </li>
+            <li class="nave-item active">
+              <a class="nav-link" href='http://localhost:8080/pothole/calendar.com'>달력</a>
+            </li>
+            <li class="nave-item active">
+              <a class="nav-link" href='http://localhost:8080/pothole/fileupload.com'>파일업로드</a>
+            </li>
+            <li class="nave-item active">
+              <a class="nav-link" href='http://localhost:8080/pothole/potholelist.com'>포트홀리스트</a>
+            </li>
+            <li class="nave-item active">
+              <a class="nav-link" href='http://localhost:8080/pothole/hardhatlist.com'>안전모리스트</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <p><br/><p>
+        <p><br/><p>
+        <img src="{% static 'img/'|add:name %}">
+        <p>안전모가 {{find}}개 검출 되었습니다.</p>
+        <p><br/><p>
+    </div>
+
+</body>
+</html>
